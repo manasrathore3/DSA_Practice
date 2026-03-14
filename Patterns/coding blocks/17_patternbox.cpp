@@ -7,54 +7,54 @@ int main(){
     cout<<"Enter N :" ;
     cin>>n;
 
-    // mid=(n+1)/2;                             // Butterfly hollow style pattern
-
-    // for (int i = 0; i < mid; i++){
-    //     for (int j = 0; j < mid-1-i; j++){
-    //         cout<<"* ";
-    //     }
-    //     for (int j = 0; j < 2*i+1; j++){
-    //         cout<<"  ";
-    //     }
-    //     for (int j = (mid-1-i); j > 0; j--){
-    //         cout<<"* ";
-    //     }
-    //     cout<<endl;
-    // }
-    // for (int i = 0; i < mid-1; i++){
-    //     for (int j = 0; j < i+1; j++){
-    //         cout<<"* ";
-    //     }
-    //     for (int j = 0; j < 2*mid-3-2*i; j++){
-    //         cout<<"  ";
-    //     }
-    //     for (int j = 0; j < i+1; j++){
-    //         cout<<"* ";
-    //     }
-    //     cout<<endl;
-    // }
-
-    // for next pattern (butterfly hollow style pattern ka reverse)
-    mid=(n+1)/2;
+    mid=(n+1)/2;                             //  hollow style pattern in box variation
 
     for (int i = 0; i < mid; i++){
         for (int j = 0; j < mid-1-i; j++){
-            cout<<"  ";
+            cout<<"* ";
         }
         for (int j = 0; j < 2*i+1; j++){
+            cout<<"  ";
+        }
+        for (int j = (mid-1-i); j > 0; j--){
             cout<<"* ";
         }
         cout<<endl;
     }
     for (int i = 0; i < mid-1; i++){
         for (int j = 0; j < i+1; j++){
-            cout<<"  ";
+            cout<<"* ";
         }
         for (int j = 0; j < 2*mid-3-2*i; j++){
+            cout<<"  ";
+        }
+        for (int j = 0; j < i+1; j++){
             cout<<"* ";
         }
         cout<<endl;
     }
+
+//     // for next pattern (Hollow style pattern in box variation ka reverse)
+//     mid=(n+1)/2;
+
+//     for (int i = 0; i < mid; i++){
+//         for (int j = 0; j < mid-1-i; j++){
+//             cout<<"  ";
+//         }
+//         for (int j = 0; j < 2*i+1; j++){
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//     }
+//     for (int i = 0; i < mid-1; i++){
+//         for (int j = 0; j < i+1; j++){
+//             cout<<"  ";
+//         }
+//         for (int j = 0; j < 2*(mid-i)-3; j++){
+//             cout<<"* ";
+//         }
+//         cout<<endl;
+//     }
 
     
     return 0;
