@@ -17,19 +17,35 @@ int main(){
     //     cout<<endl;
     // }
       
-    num=1;
-    for (int i = 0; i < n; i++){                        //24
+    // num=1;
+    // for (int i = 0; i < n; i++){                        //24
+    //     for (int j = 0; j < n-i-1; j++){
+    //         cout<<"  ";
+    //     }
+    //     for (int j = 0; j < 2*i+1; j++){
+    //         cout<<num<<" ";
+    //     }
+    //     cout<<endl;
+    //     num=num+1;
+    // }
+
+    
+    num=1;                                                  //25 
+    for (int i = 0; i < n; i++){
         for (int j = 0; j < n-i-1; j++){
-            cout<<"  ";
+            cout<<"   ";
         }
         for (int j = 0; j < 2*i+1; j++){
-            cout<<num<<" ";
+            if (i<=2 ){
+                cout<<"  "<<num;
+            }
+            if (i>2){
+                cout<<" "<<num;
+            }
+            num++;
         }
         cout<<endl;
-        num=num+1;
     }
-
-
      
     return 0;
 }
